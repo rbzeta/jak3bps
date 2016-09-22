@@ -84,4 +84,6 @@
     <string name="DB_NAME">bpr.db</string>
     <string name="hint_question_use_existing_data">Anda ingin menggunakan data di atas?</string>
     <string name="text_copyright">Created by rbzeta (robyn.seta@gmail.com)</string>
+    <string name="title_fragment_home_hist">20 Latest Entry</string>
+    <string name="title_fragment_home_summary">Summary</string>
 </resources>
