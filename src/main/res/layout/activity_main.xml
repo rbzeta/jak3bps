@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearScroll">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_kode_uker"
+                android:id="@+id/txtKodeUker" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:tag="editKodeUker"
+                android:ems="10"
+                android:id="@+id/editKodeUker"
+                android:hint="4 Digit Kode Uker" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_nama_uker"
+                android:id="@+id/txtNamaUker"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editNamaUker"
+                android:hint="Unit Kerja" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_pn_pekerja"
+                android:id="@+id/txtPN"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editPN"
+                android:hint="PN Pekerja" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_nama_pekerja"
+                android:id="@+id/txtNama"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editNamaPekerja"
+                android:hint="Nama Pekerja" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_pekerjaan"
+                android:id="@+id/txtJabatan"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroupPekerjaan"
+                android:checkedButton="@+id/radioBtnFrontOffice">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FRONTOFFICE: Customer Service/ Teller"
+                    android:id="@+id/radioBtnFrontOffice"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BACKOFFICE: Pet. ADK/ Devisa/ DJS/ SDM/ LOG/ IT/ QA"
+                    android:id="@+id/radioBtnBackOffice"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MARKETING: AO/ FO/ Mantri/ Sales Person"
+                    android:id="@+id/radioBtnMarketing"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STAFF/ OFFICER"
+                    android:id="@+id/radioBtnOfficer"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SUPERVISOR/ KEPALA UNIT"
+                    android:id="@+id/radioBtnSpv"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ASISTEN MANAJER (AMO, AMPD, AMPK, AMBM)"
+                    android:id="@+id/radioBtnAssistmanager"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MANAJER (MO/ MP) / Pincapem"
+                    android:id="@+id/radioBtnManager"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PINCA/ KABAG"
+                    android:id="@+id/radioBtnKabag"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_btn_next"
+                    android:id="@+id/btnNextQuestionaire"
+                    android:onClick="onClickBtnNext"
+                    android:textColor="#ffffff"
+                    android:background="@color/colorPrimaryDark" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textNetworkTimeout"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/textNetworkOffline"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:id="@+id/textNetworkDevice"
+            android:layout_below="@+id/textNetworkOffline"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:id="@+id/textNetworkTimeout"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="@string/text_network_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_below="@+id/textNetworkOffline"
+            android:layout_alignStart="@+id/textNetworkDevice" />
+
+        <TextView
+            android:text="@string/hint_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView15"
+            android:elevation="1dp"
+            android:layout_below="@+id/textNetworkTimeout"
+            android:layout_alignStart="@+id/textNetworkOffline" />
+
+        <TextView
+            android:text="@string/hint_timeout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView14"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textNetworkTimeout"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

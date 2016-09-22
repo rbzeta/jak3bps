@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarNetwork"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_timeout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_timeout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="@string/hint_timeout"
+                    android:inputType="textCapSentences"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_offline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_offline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:hint="@string/hint_offline"
+                    android:inputType="textCapSentences"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_network_device"
+                android:text="@string/text_network_device"
+                android:paddingTop="20dp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_group_network"
+                android:checkedButton="@+id/radio_mikrotik">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_mpls_icon"
+                    android:id="@+id/radio_mpls_icon"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_mpls_telkom"
+                    android:id="@+id/radio_mpls_telkom"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_brisat"
+                    android:id="@+id/radio_vsat_brisat"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_csm"
+                    android:id="@+id/radio_vsat_csm"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_icon"
+                    android:id="@+id/radio_vsat_icon"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_lintas_arta"
+                    android:id="@+id/radio_vsat_lintas_arta"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_metrasat"
+                    android:id="@+id/radio_vsat_metrasat"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_patrakom"
+                    android:id="@+id/radio_vsat_patrakom"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_vsat_satkomindo"
+                    android:id="@+id/radio_vsat_satkomindo"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/network_mikrotik"
+                    android:id="@+id/radio_mikrotik"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <Button android:id="@+id/btn_next_net"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_simpan"
+                android:background="@color/colorPrimary"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="@android:color/white"
+                android:onClick="onClickBtnNext"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

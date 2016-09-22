@@ -1,0 +1,205 @@
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textBrinetTime"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/textBrinetMenu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:id="@+id/textLasTime"
+                android:layout_below="@+id/textBrinetMenu"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLasTime"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textLasMenu" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLasMenu"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textSSOTime" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSSOTime"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textSSOMenu" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textSSOMenu"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textOtherTime" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textOtherTime"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="34dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textOtherMenu" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="@dimen/activity_vertical_margin"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:id="@+id/textBrinetTime"
+                android:layout_width="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:text="@string/hint_las_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView13"
+                android:layout_below="@+id/textLasTime"
+                android:layout_alignStart="@+id/textLasMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_sso_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/textLasMenu"
+                android:layout_alignStart="@+id/textLasMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_sso_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textSSOTime"
+                android:layout_alignStart="@+id/textLasMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_other_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                android:layout_below="@+id/textSSOMenu"
+                android:layout_alignStart="@+id/textLasMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_other_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView9"
+                android:layout_below="@+id/textOtherTime"
+                android:layout_alignStart="@+id/textLasMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_las_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textBrinetMenu"
+                android:layout_alignStart="@+id/textLasTime"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:text="@string/hint_brinet_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView11"
+                android:elevation="1dp"
+                android:layout_below="@+id/textBrinetTime"
+                android:layout_alignStart="@+id/textBrinetMenu"
+                android:layout_marginRight="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView10"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textBrinetTime"
+                android:layout_marginTop="16dp"
+                android:text="@string/hint_brinet_time"
+                android:layout_marginRight="16dp" />
+        </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

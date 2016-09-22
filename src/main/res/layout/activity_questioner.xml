@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity.QuestionerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearScroll2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_brinets"
+                android:id="@+id/txtBrinetWeb" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editBrinet"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_brinets_load"
+                android:id="@+id/txtBrinetsLoading"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroupBrinets"
+                android:checkedButton="@+id/radioBtnMenulogin">
+
+                <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu Login"
+                android:id="@+id/radioBtnMenulogin"
+                android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Setoran"
+                    android:id="@+id/radioBtnMenuSetoran"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Informasi Saldo"
+                    android:id="@+id/radioBtnMenuSaldo"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:id="@+id/radioBtnMenuOther"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_las"
+                android:id="@+id/txtLAS"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editLAS"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLASLoading"
+                android:text="@string/question_las_load"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroupLAS"
+                android:checkedButton="@+id/radioBtnLasLogin">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Login"
+                    android:id="@+id/radioBtnLasLogin"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Interface Brinet"
+                    android:id="@+id/radioBtnLasInterface"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu CIF"
+                    android:id="@+id/radioBtnLASCIF"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:id="@+id/radioBtnLASOther"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_sso"
+                android:id="@+id/txtSSO"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/editSSO"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtSSOLoading"
+                android:text="@string/question_sso_load"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroupSSO"
+                android:checkedButton="@+id/radioMenuBtnSSOLogin">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Login"
+                    android:id="@+id/radioMenuBtnSSOLogin"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menu Setoran Tanpa Butab"
+                    android:id="@+id/radioBtnSSOSetoran"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:id="@+id/radioBtnSSOOther"
+                    android:checked="false" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_timeout"
+                android:id="@+id/txtTimeout"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editTimeout"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_offline"
+                android:id="@+id/txtOffline"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editOffline"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_jarkom"
+                android:id="@+id/txtJarkom"
+                android:singleLine="false"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroupJarkom"
+                android:checkedButton="@+id/radioBtnMPLSICON">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MPLS-ICON +"
+                    android:id="@+id/radioBtnMPLSICON"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MPLS-Telkom"
+                    android:id="@+id/radioBtnMPLSTELKOM"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-BRISAT"
+                    android:id="@+id/radioBtnVSATBRISAT"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-CSM"
+                    android:id="@+id/radioBtnVSATCSM"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-ICON +"
+                    android:id="@+id/radioBtnVSATICON"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-Lintas Arta"
+                    android:id="@+id/radioBtnVSATLARTA"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-Metrasat"
+                    android:id="@+id/radioBtnVSATMETRA"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-Patrakom"
+                    android:id="@+id/radioBtnVSATPATRA"
+                    android:checked="false" />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VSAT-Satkomindo"
+                    android:id="@+id/radioBtnVSATSATKOM"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_appkendala"
+                android:id="@+id/txtAppKendala"
+                android:layout_marginTop="5dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/radioGroupOtherApp"
+                android:checkedButton="@+id/radioBtnAppYes">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radioBtnAppYes"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radioBtnAppNo"
+                    android:checked="false" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_kendalanya"
+                android:id="@+id/txtApaKendalanya"
+                android:layout_marginTop="5dp" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:id="@+id/editAppKendala"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_btn_next"
+                android:id="@+id/btnNextDetail"
+                android:onClick="onClickNextDetail"
+                android:layout_marginTop="5dp"
+                android:textColor="#ffffff"
+                android:background="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
