@@ -148,7 +148,9 @@ public class DataNetworkActivity extends AppCompatActivity {
             @Override
             public void onFailure(Call<ResponseMessageResponse> call, Throwable t) {
                 progress.dismiss();
-                Toast.makeText(DataNetworkActivity.this, t.getLocalizedMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(DataNetworkActivity.this,
+                        getString(R.string.err_msg_cannot_save), Toast.LENGTH_LONG).show();
+                Log.d("Error :",t.getLocalizedMessage());
             }
         });
 
