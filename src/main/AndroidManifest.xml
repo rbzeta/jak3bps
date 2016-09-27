@@ -11,7 +11,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/MyMaterialTheme">
+        android:theme="@style/AppTheme">
         <activity
             android:name=".activity.MainScreenActivity"
             android:label="@string/app_name">
@@ -59,7 +59,8 @@
             android:name=".activity.HideShowAppBarLayout"
             android:parentActivityName=".activity.MainScreenActivity" />
         <activity android:name=".activity.ViewEmployeeData" />
-        <activity android:name=".activity.SplashScreen">
+        <activity android:name=".activity.SplashScreen"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

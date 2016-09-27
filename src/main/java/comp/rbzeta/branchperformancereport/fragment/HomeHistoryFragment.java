@@ -87,7 +87,7 @@ public class HomeHistoryFragment extends Fragment
 
                         BranchPerformanceModel bpr = bprList.get(position);
 
-                        if (bpr != null) {
+                        if (bpr.getBranchCode() != null) {
                             Intent intent = new Intent(getActivity(), DetailQuestionaireActivity.class);
                             //Intent intent = new Intent(MainScreenActivity.this, HideShowAppBarLayout.class);
                             intent.putExtra(BPRContract.BPR._ID,bpr.getBprID());
